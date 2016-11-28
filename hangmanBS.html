@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+</head>
+<body>
+	<header>
+		<div class="row text-center">
+			<h1>Hangman</h1>
+		</div>
+	</header>
+	<section class="container container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5">
+				<img class="img-responsive img-rounded" id="wordImage" src="assets/images/questionmark.png">
+			</div>
+			<div class="col-md-2" id="winArea">
+				
+			</div>
+		</div><!--First row, with responsive image and win area-->
+		<div class="row row-centered top-buffer">
+			<div class="col-md-1 col-md-offset-1 col-centered">
+				<img class="img-responsive" src="assets/images/noose.png">
+			</div>
+			<div class="col-md-2 panel panel-primary col-centered">
+				<div class="panel-heading">
+    				<h3 class="panel-title">Guesses Remaining</h3>
+ 	 			</div>
+ 				 <div class="panel-body" id="guessRemain">
+    				
+	  			</div>
+			</div>	
+			<div class="col-md-4 panel panel-primary col-centered">
+				<div class="panel-heading">
+    				<h3 class="panel-title">Your Word</h3>
+  				</div>
+ 				 <div class="panel-body">
+  	  				<div class="pull-left" id="wordFill"></div>
+  				</div>			
+			</div>	
+			<div class="col-md-3 panel panel-primary col-centered">
+				<div class="panel-heading">
+    				<h3 class="panel-title">Letters Guessed</h3>
+	  			</div>
+ 				 <div class="panel-body">
+    				<div class="pull-left" id="guessMade"></div>
+	  			</div>			
+			</div>
+		</div><!--This is the second row, containing game info-->
+	</section><!--This is main section row. 1 row. 4 columns-->
+
+	<script type="text/javascript" src="assets/js/gameCode.js"></script>
+</body>
+</html>
